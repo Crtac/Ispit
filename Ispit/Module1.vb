@@ -17,8 +17,21 @@
 		For i = 0 To 19
 			Console.Write(b(i).ToString() + " ")
 		Next
+		Console.WriteLine()
+		Dim imaZajednickih As Boolean = False
+		Console.Write("Zajednički su :> ")
+		For i = 0 To 19
+			For j = 0 To 19
+				If a(i) = b(j) Then
+					Console.Write(a(i).ToString + " ")
+					imaZajednickih = True
+				End If
+			Next
+		Next
 
-
+		If imaZajednickih = False Then
+			Console.WriteLine("Nema zajedničkih")
+		End If
 
 		Console.ReadKey()
 	End Sub
