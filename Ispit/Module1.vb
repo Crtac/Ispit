@@ -19,8 +19,8 @@
 				pozicija = i
 			End If
 		Next
-
 		Console.WriteLine()
+		Console.WriteLine("Broj " + broj.ToString() + " se nalazi na poziciji " + (pozicija + 1).ToString())
 
 		Console.ReadKey()
 	End Sub
